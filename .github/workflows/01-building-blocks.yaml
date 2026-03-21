@@ -17,6 +17,7 @@ jobs:
           echo "I will fail"
           echo "a multi-line"
           echo "script"
+          exit 1
 
       - name: Say goodbye
         run: echo "Goodbye!"
