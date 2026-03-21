@@ -3,20 +3,20 @@ on:
   - push
   - workflow_dispatch
 jobs: 
-  name: echo-hello
-  runs: ubuntu-latest
-  steps:
-    - name: say hello
-      runs: echo "Hello,World!"
+  echo-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello
+        run: echo "Hello,World!"
 
-  name: echo-goodbye
-  runs: ubuntu-latest
-  steps:
-    - name: Failed step
-      runs: |
-        echo "I will fail"
-        echo "a multi-line"
-        echo "script"
+  echo-goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Failed step
+        run: |
+          echo "I will fail"
+          echo "a multi-line"
+          echo "script"
 
-    - name: Say goodbye
-      runs: echo "Goodbye!"        
+      - name: Say goodbye
+        run: echo "Goodbye!"
