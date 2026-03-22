@@ -7,5 +7,7 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v6
       - name: printing folders
-        run: ls  
+        run: ls
+      - name: read the file
+        run: cat README.md
 
