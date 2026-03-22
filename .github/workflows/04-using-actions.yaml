@@ -16,5 +16,5 @@ jobs:
           node-version: '20.x'
       - name: install dep
         run:  npm ci        
-        working-directory:  react-app
+        working-directory: 04-using-actions/react-app
 
