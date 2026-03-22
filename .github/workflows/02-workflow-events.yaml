@@ -1,0 +1,8 @@
+name: 02 - Workflow Events
+on: push
+jobs:
+  echo
+    steps: show the trigger
+      - name: show the trigger
+        run: echo "type the name"
+        
