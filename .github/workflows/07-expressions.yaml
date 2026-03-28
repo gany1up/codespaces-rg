@@ -10,15 +10,15 @@ jobs:
     runs-on:  ubuntu-latest
     steps:
       - name: [debug] Print start-up data
-        if: inputs.debug == ture
+        if: ${{inputs.debug}} # == ture
         run: |
-           echo "Triggered by: ${{github.trigger}}"
+           echo "Triggered by: ${{github.event_name}}"
            echo "Branch: ${{github.ref_name}}"
            echo "Commit SHA: ${{github.sha}}"
-           echo "Runner OS: ${{github.os}}"
+           echo "Runner OS: ${{runner.os}}"
 
       - name: [debug] Print when triggered from main
-        if: inputs.debug == ture || github.branch == 'main'
+        if: ${{inputs.debug  && github.ref == 'refs/head/main }} #
         run:
           echo "I was triggered from main"
 
