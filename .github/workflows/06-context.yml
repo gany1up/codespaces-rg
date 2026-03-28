@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Display information
         run: |
-          echo: "Event name: ${{github.event_nme}}"
+          echo: "Event name: ${{github.event_name}}"
           echo "Reg: ${{github.ref}}"
           echo "sha ${{github.sha}}"
           echo "actor:  ${{github.actor}}"
