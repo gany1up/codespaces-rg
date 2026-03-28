@@ -40,10 +40,10 @@ jobs:
         env:
           MY_OVERWRITTEN_VAR: 'step-ow'
         run: | 
-          echo: "workflow env: ${{env.MY_WORKFLOW_VAR}}"
-          echo: "Overwritten env: ${{env.MY_OVERWRITTEN_VAR}}"     
+          echo "workflow env: ${{env.MY_WORKFLOW_VAR}}"
+          echo "Overwritten env: ${{env.MY_OVERWRITTEN_VAR}}"     
 
       - name: prit env vairable 2222
         run: | 
-          echo: "workflow env: ${{env.MY_WORKFLOW_VAR}}"
-          echo: "Overwritten env: ${{env.MY_OVERWRITTEN_VAR}}"  
+          echo "workflow env: ${{env.MY_WORKFLOW_VAR}}"
+          echo "Overwritten env: ${{env.MY_OVERWRITTEN_VAR}}"  
