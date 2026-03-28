@@ -9,7 +9,7 @@ jobs:
   echo:
     runs-on:  ubuntu-latest
     steps:
-      - name: [debug] Print start-up data
+      - name: '[debug] Print start-up data'
         if: ${{inputs.debug}} # == ture
         run: |
            echo "Triggered by: ${{github.event_name}}"
@@ -17,7 +17,7 @@ jobs:
            echo "Commit SHA: ${{github.sha}}"
            echo "Runner OS: ${{runner.os}}"
 
-      - name: [debug] Print when triggered from main
+      - name: '[debug] Print when triggered from main'
         if: ${{inputs.debug  && github.ref == 'refs/head/main }} #
         run:
           echo "I was triggered from main"
