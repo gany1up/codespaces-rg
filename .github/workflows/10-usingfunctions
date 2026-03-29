@@ -27,3 +27,6 @@ jobs:
 			- name: i will execute when cancelled-ft
 				if: ${{ !cancelled() }}
 				run: echo "i will print if the workflow has been cancelled"
+
+
+			
