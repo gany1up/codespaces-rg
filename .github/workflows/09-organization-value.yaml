@@ -46,8 +46,8 @@ jobs:
     steps:
       - name: print prod variables
         run: |
-          echo "Org var: $ {{var.org_var}}"
-          echo "org ow var: ${{vars.overwritten_var}}"
+      #    echo "Org var: $ {{var.org_var}}"
+      #    echo "org ow var: ${{vars.overwritten_var}}"
           echo "Repo var: ${{ vars.repository_var}}"
           echo "Environment var: ${{ vars.target_var}}"
           
