@@ -1,5 +1,6 @@
 name: 10-usingfunctions
 on: 
+  push:
 	pull_request:
 	workflow_dispatch:
 jobs:
