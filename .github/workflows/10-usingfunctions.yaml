@@ -1,14 +1,14 @@
-name: 10-usingfunctions
+name: 10usingfunctions
 on: 
 	pull_request:
 	workflow_dispatch:
 jobs:
-	echo1:
-		runs-on: ubuntu-latest
-		steps:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
 		  - name: sleep for 20 sec
 			  run: sleep 20
-			
+				
 			- name: Failing steps
 				run: exit 1
 				
@@ -27,6 +27,3 @@ jobs:
 			- name: i will execute when cancelled-ft
 				if: ${{ !cancelled() }}
 				run: echo "i will print if the workflow has been cancelled"
-
-
-			
