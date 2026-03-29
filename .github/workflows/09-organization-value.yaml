@@ -28,7 +28,7 @@ jobs:
         env:
           overwritten: 'i have ow at the step level'
         run: |
-         echo "step env var: ${{env.overwritten}}"
+          echo "step env var: ${{env.overwritten}}"
 		  
   echo2:
     runs-on: ubuntu-latest
