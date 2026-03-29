@@ -35,8 +35,8 @@ jobs:
       - name: Print variable echo2
         run: |
           echo "Repo var: ${{ vars.repository_var}}"
-          echo "Org var: $ {{vars.org_var}}"
-          echo "org ow var: ${{vars.overwritten_var}}"
+          echo "Org var: ${{vars.org_var}}"
+          echo "org ow var: ${{var.overwritten_var}}"
                 
   echo-prod:
     runs-on: ubuntu-latest
@@ -46,7 +46,7 @@ jobs:
         run: |
           echo "Repo var: ${{ vars.repository_var}}"
           echo "Environment var: ${{ vars.target_var}}"
-          echo "Org var: $ {{vars.org_var}}"
+          echo "Org var: ${{vars.org_var}}"
           echo "org ow var: ${{vars.overwritten_var}}"
           
           
