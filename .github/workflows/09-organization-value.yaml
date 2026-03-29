@@ -32,7 +32,7 @@ jobs:
   echo2:
     runs-on: ubuntu-latest
     steps:
-      - name: Print variable
+      - name: Print variable echo2
         run: |
           echo "Repo var: ${{ vars.repository_var}}"
                 
@@ -42,7 +42,6 @@ jobs:
     steps:
       - name: print prod variables
         run: |
-
           echo "Repo var: ${{ vars.repository_var}}"
           echo "Environment var: ${{ vars.target_var}}"
           
@@ -50,8 +49,7 @@ jobs:
   echo-undefined:
    runs-on: ubuntu-latest
    steps:
-     - name: print prod variables 
+     - name: print prod variables undefined
        run: |
-
          echo "Org var: ${{ env.undefined_var_with_default }}"
                   
