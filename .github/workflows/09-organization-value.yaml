@@ -35,8 +35,7 @@ jobs:
     steps:
       - name: Print variable
         run: |
-      #    echo "Org var: $ {{var.org_var}}"
-      #    echo "org ow var: ${{vars.overwritten_var}}"
+
           echo "Repo var: ${{ vars.repository_var}}"
           
           
@@ -46,8 +45,7 @@ jobs:
     steps:
       - name: print prod variables
         run: |
-      #    echo "Org var: $ {{var.org_var}}"
-      #    echo "org ow var: ${{vars.overwritten_var}}"
+
           echo "Repo var: ${{ vars.repository_var}}"
           echo "Environment var: ${{ vars.target_var}}"
           
@@ -55,8 +53,8 @@ jobs:
   echo-undefined:
    runs-on: ubuntu-latest
    steps:
-     - name: print prod variables
+     - name: print prod variables 
        run: |
-         #echo "Org var: ${{ vars.undefined_var || 'default value' }}"	
+
          echo "Org var: ${{ env.undefined_var_with_default }}"
           
