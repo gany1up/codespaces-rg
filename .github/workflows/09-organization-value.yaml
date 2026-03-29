@@ -36,7 +36,7 @@ jobs:
         run: |
           echo "Repo var: ${{ vars.repository_var}}"
           echo "Org var: ${{vars.org_var}}"
-          echo "org ow var: ${{var.overwritten_var}}"
+          echo "org ow var: ${{vars.overwritten_var}}"
                 
   echo-prod:
     runs-on: ubuntu-latest
