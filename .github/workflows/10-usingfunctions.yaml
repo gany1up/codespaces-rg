@@ -2,6 +2,7 @@ name: 10-usingfunctions
 on: 
   workflow_dispatch:
 	pull_request:
+	push:
 jobs:
   echo1:
     runs-on: ubuntu-latest
