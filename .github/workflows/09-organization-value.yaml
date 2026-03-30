@@ -1,4 +1,4 @@
-name: 08-using variables
+name: 09-using variables
 on:
   workflow_dispatch:
   push
