@@ -1,6 +1,7 @@
 name: 08-using variables
 on:
   workflow_dispatch:
+  push
 env:
   workflow_var: 'im am wf env var'
   overwritten: 'i will be overwritten'
